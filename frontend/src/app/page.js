@@ -21,7 +21,7 @@ export default function Home() {
 
   const getRecommendation = async () => {
     try {
-      const res = await axios.post("http://127.0.0.1:5000/recommend", {
+      const res = await axios.post("https://career-ai-clean.onrender.com", {
         subjects: selectedSubjects,
       });
       setResult(res.data.recommendations);
