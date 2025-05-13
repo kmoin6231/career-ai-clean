@@ -6,7 +6,7 @@ import joblib
 app = Flask(__name__)
 CORS(app)
 
-df = pd.read_csv("../dataset/career_data.csv")
+df = pd.read_csv("./dataset/career_data.csv")
 model = joblib.load("model.pkl")
 
 @app.route("/recommend", methods=["POST"])
