@@ -18,10 +18,10 @@ export default function Home() {
         : [...prev, subject]
     );
   };
-
+ 
   const getRecommendation = async () => {
     try {
-      const res = await axios.post("https://career-ai-clean-7.onrender.com", {
+      const res = await axios.post("https://career-ai-clean-psw1.vercel.app/", {
         subjects: selectedSubjects,
       });
       setResult(res.data.recommendations);
