@@ -21,7 +21,7 @@ export default function Home() {
  
   const getRecommendation = async () => {
     try {
-      const res = await axios.post("https://career-ai-clean-psw1.vercel.app/", {
+      const res = await axios.post("http://127.0.0.1:5000", {
         subjects: selectedSubjects,
       });
       setResult(res.data.recommendations);
